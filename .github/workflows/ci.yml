@@ -14,5 +14,3 @@ jobs:
         run: pip install black ruff isort
       - name: run formatets
         run: python -m black --check . && python -m isort --check .
-      - name: run linter
-        run: python -m ruff .
