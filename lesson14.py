@@ -20,7 +20,7 @@ app.add_middleware(
 
 create_random_string: Callable[[int], str] = lambda size: "".join(
     [random.choice(string.ascii_letters) for _ in range(size)]
-)
+)# noqa: E731
 
 
 @app.get("/generate-article")
